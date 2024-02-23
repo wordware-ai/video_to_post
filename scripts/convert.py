@@ -6,8 +6,8 @@ from pathlib import Path
 def main():
     # This script converts the output of running the Wordware prompt into a set of markdown files that can be served as
     # GitHub pages
-    base_path = Path("~/Documents/Random/Karpathy Tokenizer").expanduser()
-    input_path = base_path / "karpathy_tokenizer.json"
+    project_name = "Let's build the GPT Tokenizer"
+    input_path = Path("~/Documents/Random/Karpathy Tokenizer").expanduser() / "karpathy_tokenizer.json"
 
     with input_path.open() as f:
         data = json.load(f)
@@ -23,9 +23,9 @@ def main():
         yt_url = section['YT->BP/Get time stamped URL']['time']['output']
         print(yt_url)
 
-        folder = base_path / f"{time.strftime('%Y%m%d-%H%M%S')}"
-        folder.mkdir(exist_ok=True)
-        with (folder / f"{i+1}. {title}.md").open('w') as f:
+        output_folder = Path("../pages") / project_name
+        output_folder.mkdir(exist_ok=True)
+        with (output_folder / f"{i+1}. {title}.md").open('w') as f:
             f.write(f"# {title}\n\n{content}\n\n[Video link]({yt_url})")
 
 
