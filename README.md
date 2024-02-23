@@ -16,6 +16,11 @@ Based on the challenge from [Andrej Karpathy](https://twitter.com/karpathy/statu
 > More generally, a workflow like this could be applied to any input video and auto-generate "companion guides" for 
 > various tutorials in a more readable, skimmable, searchable format. Feels tractable but non-trivial.
 
+
+## Generated posts
+[Let's build the GPT Tokenizer](./pages/Let's%20build%20the%20GPT%20Tokenizer)
+
+
 ## Prompts & scripts
 [This Wordware prompt](https://app.wordware.ai/r/b058e9c3-ffee-4661-a5e3-c788eef0dfbc) takes in the JSON output from 
 running Whisper (I used [this one](https://replicate.com/vaibhavs10/incredibly-fast-whisper) on 
