@@ -18,7 +18,7 @@ Based on the challenge from [Andrej Karpathy](https://twitter.com/karpathy/statu
 
 
 ## Generated posts
-[Let's build the GPT Tokenizer](./pages/Let's%20build%20the%20GPT%20Tokenizer)
+[Let's build the GPT Tokenizer](./pages/Let's%20build%20the%20GPT%20Tokenizer/index)
 
 
 ## Prompts & scripts
